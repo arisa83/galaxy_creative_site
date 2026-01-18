@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Oswald:wght@700&display=swap');
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary: #CCFF00; /* Neon Lime */
+  --color-secondary: #FF00CC; /* Hot Pink */
+  --color-accent: #00FFFF; /* Cyan */
+  --color-gray: #f0f0f0;
+  
+  --font-base: 'Noto Sans JP', sans-serif;
+  --font-display: 'Oswald', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}

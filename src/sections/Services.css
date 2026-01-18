@@ -1,0 +1,99 @@
+.services-section {
+    padding: 100px 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.highlight-neon {
+    color: var(--color-primary);
+    text-decoration: underline wavy var(--color-secondary) 5px;
+    text-underline-offset: 10px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.service-card {
+    background-color: #222;
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+}
+
+.service-card:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.clip-corner-1 {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
+}
+
+.clip-corner-2 {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+}
+
+.clip-corner-3 {
+    clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+.clip-corner-4 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+}
+
+.card-number {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 1;
+}
+
+.card-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.service-card:hover .card-desc {
+    color: #fff;
+}
+
+.card-btn {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-card:hover .card-btn {
+    background: #fff;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
